@@ -1,0 +1,22 @@
+
+.space{
+    display: flex;
+    height: auto;
+    min-height: 90vh;
+    flex-direction:row;
+    background: blue;
+}
+.todo{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background: #b7a133;
+    border-right: 2px solid black;
+}
+.text{
+    margin: 0;
+    font-size: 36px;
+    /*font-style:italic;*/
+    text-decoration:underline;
+
+}
