@@ -1,0 +1,360 @@
+
+
+.notification{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    /*user-select:none;*/
+    margin: 7px 20px 7px 0;
+    height: 43.5px;
+    width: 43.5px;
+    background: rgba(175, 164, 42, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+
+}
+
+
+*:focus {
+    outline: 0 !important;
+}
+
+
+.openButten{
+    right: 1px;
+    top:1px;
+    height: 25px;
+    position: absolute;
+    display: flex;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #100909;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.modalText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    font-size: 22px;
+    padding: 0;
+    margin: 10px 0 5px 0;
+
+}
+
+.modalDescripsion {
+    width: 80%;
+    padding: 10px; /* Отступы внутри текстового поля */
+    border: 2px solid #030303; /* Цвет и стиль границы */
+    border-radius: 10px; /* Закругленные углы */
+    font-size: 16px; /* Размер шрифта */
+    background: rgba(255, 255, 255, 0.5);
+    resize: vertical; /* Ограничение изменения размера только по вертикали */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта глубины */
+    box-sizing: border-box;
+}
+
+.modalDescripsion:focus {
+    background: rgba(255, 255, 255, 0.5);
+    border-color: #000000; /* Цвет рамки при фокусе */
+    outline: none; /* Убираем стандартный контур */
+
+}
+
+.modalBody{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Akaya Kanadaka', sans-serif;
+}
+
+.modalStatus{
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #100909;
+    margin: 0;
+    padding: 0 10px 0 10px;
+    background: rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+}
+
+.modalStatus:focus{
+    background: rgba(255, 255, 255, 0.6);
+}
+.ToolBar{
+    height: 40px;
+    display: flex;
+    background-color: #726f6f;
+}
+.Filter{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FilterSelect{
+    filter:brightness(50%);
+    /*background-color: rgba(255, 255, 255, 1);*/
+    background-color: #3effa4;
+    cursor: none;
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #100909;
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+.FilterSelect:active{
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.FilterButton{
+    position: relative;
+    bottom: 2%;
+    right: 2%;
+    width: auto;
+    height: auto;
+    min-height: 30px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border: #000000 solid 2px;
+    border-radius: 10px;
+    margin: 5px 10px 5px 10px;
+    padding: 0 10px 0 10px;
+}
+.FilterText{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 40%;
+font-size: 22px;
+padding: 0;
+margin: 0;
+}
+
+.Tool{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.modalTask {
+    box-sizing: border-box;
+    overflow: auto;
+    height: 40%;
+    width: 50%;
+    min-height: 370px;
+    min-width: 450px;
+    inset: 40px;
+    outline: none;
+    border: 1px solid rgb(18 11 11);
+    background: rgb(65, 112, 67);
+    border-radius: 10px;
+    position: fixed;
+    top: calc(20%);
+    left: calc(25%);
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    text-align: center;
+}
+
+
+.modalInput{
+    padding: 0 10px 0 10px;
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #100909;
+    box-sizing: border-box;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.5);
+
+
+
+}
+.modalInput:focus{
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.modalButtons{
+    display: flex;
+    width: 80%;
+    padding: 15px 0 15px 0;
+    margin: 0;
+    justify-content:  space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.modalButton{
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    font-family: 'Akaya Kanadaka', sans-serif;
+    height: 30px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    margin:0 ;
+    padding: 0;
+    width: 47%;
+    border-radius: 10px;
+
+}
+
+.modalButton:focus{
+    background: rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+.workSpace{
+    position: absolute;
+    top: 60px;
+    min-width:600px;
+    width: 100%;
+    min-height: calc(100vh - 60px - 5px - 40px);
+    border-top:3px solid black ;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.workSheet{
+    /*position: relative;*/
+    /*top: 0px;*/
+    /*min-width:600px;*/
+    /*width: 100%;*/
+    min-height: calc(100vh - 60px - 5px - 40px);
+    border-top:2px solid black ;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.workArea{
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 25% ;
+    background: #a8a6a6;
+    border-right: 2px solid black;
+    align-items: center;
+
+}
+
+
+
+.status {
+    margin: 0;
+    font-size: 32px;
+    text-decoration:underline;
+
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 84%;
+    margin:4% 4% 0 4%;
+    background: rgba(73, 134, 75, 0.45);
+    border-radius: 16px;
+    cursor:grab;
+    padding: 4%;
+    border-right: black solid 1px;
+    border-bottom: black solid 1px;
+}
+
+
+
+.headerTask{
+    width: 100%;
+   position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+    height: auto;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 10px;
+
+    word-wrap: break-word; /* Перенос длинных слов */
+    white-space: normal;
+}
+.headerName{
+
+    word-break: break-all;
+    width: 60%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: auto;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+}
+
+.description{
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 2px solid black;
+    word-break: break-all;
+}
+
+
+.dataInfo{
+
+    width: 100%;
+    display: flex;
+    min-width: 120px;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+    align-items: center;
+}
+.dataCreate{
+    min-width: 65px;
+    width: 50%;
+    font-size: 14px;
+}
+.dataUpdate{
+    min-width: 65px;
+    width: 50%;
+    font-size: 14px;
+}
+
+.selectedCard{
+    /*width: 80px;*/
+    /*height: 60px;*/
+    filter:brightness(50%);
+    /*background-color: black;*/
+    cursor: none;
+}
+
+.allowedArea {
+    background-color: rgb(133, 133, 133);
+
+}
+
+.allowedButton {
+    background-color: rgb(100, 100, 100);
+
+}
+.hide {
+     display: none;
+ }

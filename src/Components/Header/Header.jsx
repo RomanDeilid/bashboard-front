@@ -1,16 +1,23 @@
-import sidebar from "./public/icons8-menu.svg"
+import sidebar from "../public/icons8-menu.svg"
 import styles from "./Header.module.css";
 
 
-function Header({companyName="R-NOX",sheetName="Front", name="Roma"}) {
+
+function Header({active,setActive, menuActive, setMenuActive} ) {
+
     return (
         <div className={styles.header}>
+
                 <img className={styles.sidebar} src={sidebar} alt="svg sidebar" onClick={()=>{
-                    console.log("tЫk")}}/>
-            <div className={styles.company}> {companyName}({sheetName})</div>
+                   setMenuActive(!menuActive)}}/>
+            <div className={styles.company}> {localStorage.getItem("company_name").toUpperCase()}</div>
+
             <div className={styles.user} onClick={()=>{
-                console.log("tЫk2")}}>{name[0]} </div>
+                setActive(!active) }}>{localStorage.getItem("user_name")[0].toUpperCase() } </div>
+
+
         </div>
+
     );
 }
 

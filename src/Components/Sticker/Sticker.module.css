@@ -1,5 +1,5 @@
 
-.space{
+.wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,6 +7,7 @@
     margin:4% 4% 0 4%;
     background: #72e257;
     border-radius: 16px;
+    cursor:grab;
     padding: 4%;
     border-right: black solid 1px;
     border-bottom: black solid 1px;

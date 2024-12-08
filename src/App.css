@@ -1,9 +1,9 @@
 .App {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: red;
   min-height: 100vh;
-
-  font-family: 'Akaya Kanadaka', sans-serif;
+  width: 100%;
+  /*font-family: 'Akaya Kanadaka', sans-serif;*/
 }
